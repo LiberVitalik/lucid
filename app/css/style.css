@@ -1,0 +1,15 @@
+.OpenSansPro-Semibold {
+  font-family: 'SansPro-Semibold', sans-serif;
+}
+.main-wrapper {
+  width: 1440px;
+}
+.main-wrapper .wrap {
+  width: 1170px;
+  margin: 0 auto;
+}
+.main-wrapper .device-wrapper {
+  width: 100%;
+  height: 640px;
+  background: #15141a url("../img/header-device-bg.png") 50% 50% no-repeat;
+}

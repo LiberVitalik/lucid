@@ -1,5 +1,17 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    less = require('gulp-less'),
+    autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('less', function () {
+    return gulp.src('app/less/**/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('app/css'))
+        .pipe(browserSync.reload({stream: true}))
+        .pipe(browserSync.reload({
+            stream: true
+        }));
+});
 
 gulp.task('browser-sync', function () {
     browserSync({
@@ -10,8 +22,8 @@ gulp.task('browser-sync', function () {
     })
 });
 
-gulp.task('watch', ['browser-sync'], function () {
-    gulp.watch('app/css/*.css', browserSync.reload);
+gulp.task('watch', ['browser-sync', 'less'], function () {
+    gulp.watch('app/less/**/*.less', ['less']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'SansPro-regular';
+    src: url('../fonts/sourcesanspro-regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SansPro-Bold';
+    src: url('../fonts/sourcesanspro-bold.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SansPro-Semibold';
+    src: url('../fonts/sourcesanspro-semibold.ttf') format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SansPro-It';
+    src: url('../fonts/sourcesanspro-it.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../fonts/Quicksand-Bold.otf') format("opentype");
+    font-weight: Bold;
+    font-style: normal;
+}
