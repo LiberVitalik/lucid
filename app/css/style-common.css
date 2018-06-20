@@ -3,3 +3,21 @@
   display: table;
   clear: both;
 }
+.clip {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.multi-clip {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}

@@ -32,3 +32,10 @@
     font-weight: Bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url("../fonts/MyriadProRegular.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
