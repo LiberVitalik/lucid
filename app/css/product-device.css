@@ -70,7 +70,7 @@
 .product-device__header nav ul li:after {
   content: "";
   display: none;
-  width: calc(49%);
+  width: calc(48%);
   height: 2px;
   background: #008ed6;
   position: absolute;

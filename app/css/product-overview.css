@@ -4,38 +4,47 @@
 .MyriadPro-Regular {
   font-family: 'MyriadPro-Regular', sans-serif;
 }
-.product-overview h2 {
+.product-overview .content-name {
+  margin: 65px 0;
+}
+.product-overview .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
   font-size: 14px;
   text-transform: uppercase;
 }
-.product-overview h1 {
+.product-overview .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
   font-size: 36px;
   color: #1a1a1a;
 }
-.product-overview .line {
+.product-overview .content-name h1,
+.product-overview .content-name h2 {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.product-overview .content-name .line {
   width: 42px;
   position: relative;
+  margin: 0 auto;
 }
-.product-overview .line:before,
-.product-overview .line:after {
+.product-overview .content-name .line:before,
+.product-overview .content-name .line:after {
   content: "";
   display: block;
-  width: calc(49%);
+  width: 20px;
   height: 2px;
   background: #008ed6;
   position: absolute;
   bottom: 0;
 }
-.product-overview .line:before {
+.product-overview .content-name .line:before {
   left: 0;
 }
-.product-overview .line:after {
+.product-overview .content-name .line:after {
   right: 0;
 }
-.product-overview .line:hover:before,
-.product-overview .line:hover:after {
+.product-overview .content-name .line:hover:before,
+.product-overview .content-name .line:hover:after {
   display: block;
 }

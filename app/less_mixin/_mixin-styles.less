@@ -8,14 +8,14 @@
     -webkit-line-clamp: @line-count;
 }
 
-.Underline(@display: block, @display-hover: block) {
+.Underline(@display: block, @display-hover: block, @calc-width: calc(50% - 2px)) {
     position: relative;
 
     &:before,
     &:after {
         content: "";
         display: @display;
-        width: calc(50% - 1px);
+        width: @calc-width;
         height: 2px;
         background: @brand-color;
         position: absolute;
@@ -54,9 +54,16 @@
         color: @content-color;
     }
 
+    h1,
+    h2 {
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
     .line {
         width: 42px;
 
-        .Underline();
+        .Underline(@calc-width: 20px);
+        margin: 0 auto;
     }
 }
