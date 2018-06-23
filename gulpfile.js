@@ -24,6 +24,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('watch', ['browser-sync', 'less'], function () {
     gulp.watch('app/less/**/*.less', ['less']);
+    gulp.watch('app/less_mixin/*.less', ['less']);
     gulp.watch('app/*.html', browserSync.reload);
 });
 

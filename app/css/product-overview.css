@@ -1,0 +1,41 @@
+.OpenSansPro-Semibold {
+  font-family: 'SansPro-Semibold', sans-serif;
+}
+.MyriadPro-Regular {
+  font-family: 'MyriadPro-Regular', sans-serif;
+}
+.product-overview h2 {
+  font-family: 'SansPro-Bold', sans-serif;
+  color: #008ed6;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.product-overview h1 {
+  font-family: 'SansPro-Semibold', sans-serif;
+  font-size: 36px;
+  color: #1a1a1a;
+}
+.product-overview .line {
+  width: 42px;
+  position: relative;
+}
+.product-overview .line:before,
+.product-overview .line:after {
+  content: "";
+  display: block;
+  width: calc(49%);
+  height: 2px;
+  background: #008ed6;
+  position: absolute;
+  bottom: 0;
+}
+.product-overview .line:before {
+  left: 0;
+}
+.product-overview .line:after {
+  right: 0;
+}
+.product-overview .line:hover:before,
+.product-overview .line:hover:after {
+  display: block;
+}
