@@ -2,9 +2,9 @@
 
 .Multi-clip(@line-count: 0) {
     display: -webkit-box;
-    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
     -webkit-line-clamp: @line-count;
 }
 
@@ -65,5 +65,25 @@
 
         .Underline(@calc-width: 20px);
         margin: 0 auto;
+    }
+}
+
+.Column(@width-item: 0) {
+    ul {
+        display: inline-block;
+        margin: 0 auto;
+
+        &:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        li {
+            width: @width-item;
+            float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+        }
     }
 }

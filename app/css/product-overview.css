@@ -5,7 +5,7 @@
   font-family: 'MyriadPro-Regular', sans-serif;
 }
 .product-overview .content-name {
-  margin: 65px 0;
+  margin: 65px 0 90px;
 }
 .product-overview .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
@@ -47,4 +47,69 @@
 .product-overview .content-name .line:hover:before,
 .product-overview .content-name .line:hover:after {
   display: block;
+}
+.product-overview .group-info {
+  font-family: 'SansPro-regular', sans-serif;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.product-overview .group-info ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+.product-overview .group-info ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.product-overview .group-info ul li {
+  width: 235px;
+  float: left;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+}
+.product-overview .group-info ul {
+  max-width: 1170px;
+  overflow: hidden;
+}
+.product-overview .group-info li:not(:nth-child(4)) {
+  margin-right: 70px;
+}
+.product-overview .group-info li:hover .icon-wrap {
+  transform: scale(1.1);
+}
+.product-overview .group-info li p {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 20;
+  max-height: 360px;
+}
+.product-overview .group-info * {
+  margin: 0 auto;
+}
+.product-overview .group-info .icon-wrap {
+  width: 90px;
+  height: 90px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  transition: all 0.3s ease-in;
+}
+.product-overview .group-info .icon-wrap img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product-overview .group-info h6 {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+.product-overview .group-info p {
+  font-size: 18px;
+  color: #999;
 }

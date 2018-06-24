@@ -8,6 +8,8 @@
   width: 100%;
   height: 640px;
   background: #16151b url("../img/header-device-bg.png") 50% 50% no-repeat;
+  position: relative;
+  overflow: hidden;
 }
 .product-device__header {
   height: 95px;
@@ -41,9 +43,9 @@
 .product-device__header .logo .logo-caption small {
   font-family: 'SansPro-regular', sans-serif;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   max-width: 45px;
   max-height: 24px;
@@ -111,9 +113,9 @@
 .product-device__landing-page h1 {
   font-family: 'SansPro-Semibold', sans-serif;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-size: 48px;
   color: white;
@@ -122,9 +124,9 @@
 .product-device__landing-page p {
   font-family: 'SansPro-regular', sans-serif;
   display: -webkit-box;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
   font-size: 18px;
   color: #999;
@@ -154,4 +156,9 @@
 }
 .product-device__landing-page__control button:hover {
   background: #008ed6;
+}
+.product-device .devices {
+  position: absolute;
+  right: 175px;
+  bottom: -85px;
 }
