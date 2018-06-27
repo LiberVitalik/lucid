@@ -5,7 +5,7 @@
   font-family: 'MyriadPro-Regular', sans-serif;
 }
 .product-overview .content-name {
-  margin: 65px 0 90px;
+  margin: 60px 0 90px;
 }
 .product-overview .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
@@ -20,13 +20,19 @@
 }
 .product-overview .content-name h1,
 .product-overview .content-name h2 {
+  max-height: auto;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   text-align: center;
   margin: 0 auto 20px;
 }
 .product-overview .content-name .line {
-  width: 42px;
   position: relative;
-  margin: 0 auto;
+  width: 42px;
+  margin: 0 auto 20px;
 }
 .product-overview .content-name .line:before,
 .product-overview .content-name .line:after {
@@ -70,7 +76,10 @@
 }
 .product-overview .group-info ul {
   max-width: 1170px;
-  overflow: hidden;
+  overflow: auto;
+}
+.product-overview .group-info li {
+  padding-top: 5px;
 }
 .product-overview .group-info li:not(:nth-child(4)) {
   margin-right: 70px;
@@ -79,12 +88,12 @@
   transform: scale(1.1);
 }
 .product-overview .group-info li p {
+  max-height: 360px;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 20;
-  max-height: 360px;
 }
 .product-overview .group-info * {
   margin: 0 auto;

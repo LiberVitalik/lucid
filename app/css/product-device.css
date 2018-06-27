@@ -42,13 +42,13 @@
 }
 .product-device__header .logo .logo-caption small {
   font-family: 'SansPro-regular', sans-serif;
+  max-height: 24px;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   max-width: 45px;
-  max-height: 24px;
   font-size: 9px;
   text-transform: uppercase;
   color: #4d4e52;
@@ -112,6 +112,7 @@
 }
 .product-device__landing-page h1 {
   font-family: 'SansPro-Semibold', sans-serif;
+  max-height: auto;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -123,6 +124,7 @@
 }
 .product-device__landing-page p {
   font-family: 'SansPro-regular', sans-serif;
+  max-height: 125px;
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -131,7 +133,6 @@
   font-size: 18px;
   color: #999;
   line-height: 26px;
-  max-height: 125px;
 }
 .product-device__landing-page__control {
   max-width: 490px;

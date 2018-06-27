@@ -1,0 +1,80 @@
+@import "../less_mixin/_mixin";
+
+.product-design {
+    padding: 65px 0;
+
+    &__devices,
+    &__device {
+        width: 50%;
+    }
+
+    &__devices {
+        img {
+            margin-left: 190px;
+        }
+    }
+
+    &__device {
+        .content-name {
+            .Component-content-name(
+                @margin: 0 0 20px 0,
+                @text-align: left);
+
+            margin-bottom: 45px;
+        }
+
+        p,
+        ul li a span {
+            .OpenSansPro-Regular();
+
+            font-size: 18px;
+        }
+
+        p {
+            .Multi-clip(@line-count: 10, @max-height: 180px);
+
+            max-width: 500px;
+            color: @text-color;
+            margin-bottom: 35px;
+        }
+
+        ul {
+            .Scrollbar(
+                @thumb-color: @brand-color,
+                @track-color: @text-color,
+                @max-height: 220px);
+
+            max-width: 500px;
+            overflow: auto;
+        }
+
+        ul li {
+            margin-bottom: 15px;
+        }
+
+        ul li a {
+            display: table;
+        }
+
+        ul li a span {
+            display: table-cell;
+            max-width: 400px;
+            vertical-align: middle;
+            color: @section-name-color;
+        }
+
+        ul li a .icon-item {
+            display: table-cell;
+            width: 25px;
+            height: 25px;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

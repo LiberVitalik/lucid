@@ -16,7 +16,7 @@
 
         ul {
             max-width: 1170px;
-            overflow: hidden;
+            overflow: auto;
         }
 
         li {
@@ -33,9 +33,7 @@
             }
 
             p {
-                .Multi-clip(@line-count: 20);
-
-                max-height: 360px;
+                .Multi-clip(@line-count: 20, @max-height: 360px);
             }
         }
 

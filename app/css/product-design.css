@@ -1,0 +1,122 @@
+.OpenSansPro-Semibold {
+  font-family: 'SansPro-Semibold', sans-serif;
+}
+.MyriadPro-Regular {
+  font-family: 'MyriadPro-Regular', sans-serif;
+}
+.product-design {
+  padding: 65px 0;
+}
+.product-design__devices,
+.product-design__device {
+  width: 50%;
+}
+.product-design__devices img {
+  margin-left: 190px;
+}
+.product-design__device .content-name {
+  margin-bottom: 45px;
+}
+.product-design__device .content-name h2 {
+  font-family: 'SansPro-Bold', sans-serif;
+  color: #008ed6;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.product-design__device .content-name h1 {
+  font-family: 'SansPro-Semibold', sans-serif;
+  font-size: 36px;
+  color: #1a1a1a;
+}
+.product-design__device .content-name h1,
+.product-design__device .content-name h2 {
+  max-height: auto;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-align: left;
+  margin: 0 0 20px 0;
+}
+.product-design__device .content-name .line {
+  position: relative;
+  width: 42px;
+  margin: 0 0 20px 0;
+}
+.product-design__device .content-name .line:before,
+.product-design__device .content-name .line:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #008ed6;
+  position: absolute;
+  bottom: 0;
+}
+.product-design__device .content-name .line:before {
+  left: 0;
+}
+.product-design__device .content-name .line:after {
+  right: 0;
+}
+.product-design__device .content-name .line:hover:before,
+.product-design__device .content-name .line:hover:after {
+  display: block;
+}
+.product-design__device p,
+.product-design__device ul li a span {
+  font-family: 'SansPro-regular', sans-serif;
+  font-size: 18px;
+}
+.product-design__device p {
+  max-height: 180px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  max-width: 500px;
+  color: #999;
+  margin-bottom: 35px;
+}
+.product-design__device ul {
+  max-height: 220px;
+  max-width: 500px;
+  overflow: auto;
+}
+.product-design__device ul::-webkit-scrollbar {
+  width: 8px;
+}
+.product-design__device ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #008ed6;
+  border-radius: 8px;
+}
+.product-design__device ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #008ed6;
+}
+.product-design__device ul li {
+  margin-bottom: 15px;
+}
+.product-design__device ul li a {
+  display: table;
+}
+.product-design__device ul li a span {
+  display: table-cell;
+  max-width: 400px;
+  vertical-align: middle;
+  color: #1a1a1a;
+}
+.product-design__device ul li a .icon-item {
+  display: table-cell;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+.product-design__device ul li a .icon-item img {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
