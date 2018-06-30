@@ -4,23 +4,25 @@
     .content-name {
         .Component-content-name();
 
-        margin: 60px 0 90px;
+        margin: 60px 0 45px;
     }
 
     .group-info {
         .OpenSansPro-Regular();
         .Column(@width-item: 235px);
+        .Scrollbar(@thumb-color: @brand-color, @max-height: 580px);
 
         text-align: center;
         margin-bottom: 70px;
 
         ul {
             max-width: 1170px;
-            overflow: auto;
+            overflow: hidden;
         }
 
         li {
             padding-top: 5px;
+            margin-top: 45px;
 
             &:not(:nth-child(4)) {
                 margin-right: 70px;
