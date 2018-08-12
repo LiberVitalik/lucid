@@ -1,13 +1,25 @@
 var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     less = require('gulp-less'),
-    autoprefixer = require('gulp-autoprefixer');
+    markdown = require('markdown'),
+    fileInclude = require('gulp-file-include');
+
+gulp.task('fileInclude', function() {
+    gulp.src(['app/template/index.html'])
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file',
+            filters: {
+                markdown: markdown.parse
+            }
+        }))
+        .pipe(gulp.dest('./app/'));
+});
 
 gulp.task('less', function () {
-    return gulp.src('app/less/**/*.less')
+    return gulp.src('app/template/*.less')
         .pipe(less())
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({stream: true}))
         .pipe(browserSync.reload({
             stream: true
         }));
@@ -22,9 +34,11 @@ gulp.task('browser-sync', function () {
     })
 });
 
-gulp.task('watch', ['browser-sync', 'less'], function () {
-    gulp.watch('app/less/**/*.less', ['less']);
+gulp.task('watch', ['fileInclude', 'browser-sync', 'less'], function () {
+    gulp.watch('app/template/**/*.less', ['less']);
+    gulp.watch('app/template/*.less', ['less']);
     gulp.watch('app/less_mixin/*.less', ['less']);
+    gulp.watch('app/template/**/*.html', ['fileInclude'], browserSync.reload);
     gulp.watch('app/*.html', browserSync.reload);
 });
 
