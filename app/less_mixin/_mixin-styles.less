@@ -118,3 +118,17 @@
         background: @thumb-color;
     }
 }
+
+.Vertical-align(@position: middle) {
+    &:before {
+        content: "";
+        height: 100%;
+        display: inline-block;
+        vertical-align: @position;
+    }
+
+    * {
+        display: inline-block;
+        vertical-align: @position;
+    }
+}

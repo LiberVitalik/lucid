@@ -2,11 +2,7 @@
 
 .product-design {
     padding: 65px 0;
-
-    &__devices,
-    &__device {
-        width: 50%;
-    }
+    border-top: 1px solid @line-color;
 
     &__devices {
         img {
@@ -23,8 +19,7 @@
             margin-bottom: 45px;
         }
 
-        p,
-        ul li a span {
+        &--text {
             .OpenSansPro-Regular();
 
             font-size: 18px;
@@ -42,38 +37,27 @@
             .Scrollbar(
                 @thumb-color: @brand-color,
                 @track-color: @text-color,
-                @max-height: 220px);
+                @max-height: 200px);
 
             max-width: 500px;
             overflow: auto;
-        }
 
-        ul li {
-            margin-bottom: 15px;
-        }
+            a {
+                .Vertical-align();
 
-        ul li a {
-            display: table;
-        }
+                margin-bottom: 15px;
 
-        ul li a span {
-            display: table-cell;
-            max-width: 400px;
-            vertical-align: middle;
-            color: @section-name-color;
-        }
+                i {
+                    color: @brand-color;
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
 
-        ul li a .icon-item {
-            display: table-cell;
-            width: 25px;
-            height: 25px;
-            position: relative;
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 25%;
-                transform: translate(-50%, -50%);
+                span {
+                    display: inline-block;
+                    max-width: 400px;
+                    color: @section-name-color;
+                }
             }
         }
     }
