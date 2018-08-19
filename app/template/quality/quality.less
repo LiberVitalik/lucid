@@ -1,0 +1,92 @@
+@import "../../less_mixin/_mixin";
+
+.product-quality {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background: @bg-color url("../../img/quality-bg.png") 50% 50% no-repeat;
+
+    .content-name {
+        .Component-content-name(@content-color: white);
+
+        margin: 60px 0 140px;
+    }
+
+    &__carousel {
+        font-size: 0;
+        margin-bottom: 120px;
+
+        li {
+            display: inline-block;
+            width: 585px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: white;
+
+            p {
+                .SansPro-It();
+                .Multi-clip(@line-count: 3);
+
+                line-height: 32px;
+                font-size: 24px;
+                max-width: 560px;
+                margin-bottom: 20px;
+            }
+
+            figure {
+                .Vertical-align;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                }
+
+                figcaption {
+                    span {
+                        max-width: 450px;
+                    }
+
+                    .user-name {
+                        .SansPro-Regular();
+
+                        display: block;
+                    }
+
+                    .company {
+                        .SansPro-Bold();
+
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    &__carousel-control {
+        .Vertical-align();
+
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 0;
+
+        button {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid #4e484a;
+            box-sizing: border-box;
+            border-radius: 50%;
+            background: transparent;
+            cursor: pointer;
+            margin: 0 10px 55px;
+        }
+
+        .active {
+            width: 14px;
+            height: 14px;
+            background: white;
+        }
+    }
+}

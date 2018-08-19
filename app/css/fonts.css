@@ -27,6 +27,13 @@
 }
 
 @font-face {
+    font-family: 'SansPro-Light';
+    src: url('../fonts/sourcesanspro-light.ttf') format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
     font-family: 'Quicksand-Bold';
     src: url('../fonts/Quicksand-Bold.otf') format("opentype");
     font-weight: Bold;

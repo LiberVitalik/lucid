@@ -1,0 +1,35 @@
+@import "../../less_mixin/_mixin";
+
+.product-advertising {
+    background: #15141a;
+
+    .wrap {
+        .Vertical-align();
+
+        padding: 65px 0;
+    }
+
+    &__text {
+        width: 70%;
+        color: white;
+        font-size: 36px;
+
+        span {
+            .SansPro-Light();
+        }
+
+        strong {
+            .SansPro-Semibold();
+        }
+    }
+
+    &__control {
+        width: 30%;
+
+        button {
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+}
