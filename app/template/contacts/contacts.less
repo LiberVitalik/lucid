@@ -1,0 +1,34 @@
+@import "../../less_mixin/_mixin";
+
+.product-contacts {
+    background: @line-color;
+
+    .content-name {
+        .Component-content-name();
+
+        padding: 60px 0;
+    }
+
+    &__info {
+        &--item {
+            text-align: center;
+
+            i {
+                font-size: 30px;
+                color: @brand-color;
+            }
+
+            span {
+                .SansPro-Regular();
+
+                font-size: 18px;
+                color: @text-color;
+                line-height: 26px;
+
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

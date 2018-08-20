@@ -1,5 +1,124 @@
 @import "../../less_mixin/_mixin";
 
 .product-plans {
+    .content-name {
+        .Component-content-name();
 
+        padding: 60px 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    &__plans-item {
+        width: 270px;
+        border: 1px solid #e0e0e0;
+        position: relative;
+        margin-bottom: 60px;
+
+        &:not(:nth-child(4n)) {
+            margin-right: 30px;
+        }
+
+        &--plan {
+            .SansPro-Bold();
+            .Vertical-align();
+
+            max-width: 260px;
+            height: 70px;
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: @section-name-color;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        &--price {
+            height: 150px;
+            border-bottom: 1px solid #e0e0e0;
+            position: relative;
+
+            .price-wrap {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                &:before {
+                    content: '\e902';
+                    font-family: 'lucid-font-icon', sans-serif;
+                    font-size: 25px;
+                    position: absolute;
+                    top: 10px;
+                    left: -20px;
+                    color: @section-name-color;
+                }
+
+                &:after {
+                    .SansPro-Regular();
+
+                    content: '/per month';
+                    min-width: 100px;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -20px;
+                    transform: translateX(-50%);
+                    font-size: 18px;
+                    color: @text-color;
+                }
+
+                span {
+                    .SansPro-Semibold();
+
+                    max-width: 220px;
+                    font-size: 60px;
+                    position: relative;
+                }
+            }
+        }
+
+        &--description {
+            padding: 50px 25px 30px;
+
+            .text-wrap {
+                .Scrollbar(
+                    @thumb-color: @brand-color;
+                    @max-height: 110px;
+                );
+
+                margin-bottom: 40px;
+
+                p {
+                    .SansPro-Regular();
+
+                    min-height: 100px;
+                    padding-right: 5px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: @text-color;
+
+                    a {
+                        display: inline;
+                        color: @brand-color;
+                    }
+                }
+            }
+
+            .lucid-button {
+                color: @brand-color;
+                border: 1px solid #e0e0e0;
+                padding: 20px 40px;
+                border-radius: 5px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+
+                &:hover {
+                    background: @brand-color;
+                    color: white;
+                }
+            }
+        }
+    }
 }
