@@ -736,6 +736,18 @@
 .product-plans__plans-item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
+.product-plans__plans-item:hover .product-plans__plans-item--plan {
+  color: #008ed6;
+}
+.product-plans__plans-item:hover .product-plans__plans-item--price,
+.product-plans__plans-item:hover .product-plans__plans-item--description > button {
+  background: #008ed6;
+  color: white;
+}
+.product-plans__plans-item:hover .product-plans__plans-item--price .price-wrap:before,
+.product-plans__plans-item:hover .product-plans__plans-item--price .price-wrap:after {
+  color: white;
+}
 .product-plans__plans-item--plan {
   font-family: 'SansPro-Bold', sans-serif;
   max-width: 260px;
@@ -839,6 +851,7 @@
 }
 .product-contacts {
   background: #ededed;
+  position: relative;
 }
 .product-contacts .content-name {
   padding: 60px 0;
@@ -890,19 +903,80 @@
 .product-contacts .content-name .line:hover:after {
   display: block;
 }
+.product-contacts__info {
+  padding-bottom: 370px;
+}
 .product-contacts__info--item {
+  max-height: auto;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
   text-align: center;
+  font-size: 18px;
+  width: 190px;
+  max-width: 190px;
+  min-height: 140px;
+  margin: 0 100px;
 }
 .product-contacts__info--item i {
   font-size: 30px;
   color: #008ed6;
 }
-.product-contacts__info--item span {
+.product-contacts__info--item span,
+.product-contacts__info--item address,
+.product-contacts__info--item a {
   font-family: 'SansPro-regular', sans-serif;
-  font-size: 18px;
+  text-align: center;
   color: #999;
   line-height: 26px;
 }
-.product-contacts__info--item span:first-of-type {
+.product-contacts__info--item span:first-of-type,
+.product-contacts__info--item address:first-of-type,
+.product-contacts__info--item a:first-of-type {
   margin-top: 30px;
+}
+.product-contacts .feedback {
+  width: 770px;
+  background: #15141a;
+  position: absolute;
+  bottom: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.product-contacts .feedback form {
+  padding: 60px 65px 40px 70px;
+}
+.product-contacts .feedback form input:not([type='submit']) {
+  width: 300px;
+  height: 50px;
+  display: block;
+  margin-bottom: 20px;
+}
+.product-contacts .feedback form textarea {
+  width: 300px;
+  height: 190px;
+  float: right;
+  resize: none;
+  padding-top: 20px;
+  margin-right: 20px;
+}
+.product-contacts .feedback form .feedback-style {
+  border: 1px solid #444348;
+  background: transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  color: white;
+}
+.product-contacts .feedback form .feedback-style::placeholder {
+  font-family: 'SansPro-Semibold', sans-serif;
+  font-size: 14px;
+  color: #606062;
+  text-transform: uppercase;
+}
+.product-contacts .feedback form .lucid-button {
+  float: right;
+  margin-right: 20px;
 }

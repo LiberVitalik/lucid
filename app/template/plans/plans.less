@@ -21,6 +21,27 @@
             margin-right: 30px;
         }
 
+        &:hover & {
+            &--plan {
+                color: @brand-color;
+            }
+
+            &--price,
+            &--description > button {
+                background: @brand-color;
+                color: white;
+            }
+
+            &--price {
+                .price-wrap {
+                    &:before,
+                    &:after {
+                        color: white;
+                    }
+                }
+            }
+        }
+
         &--plan {
             .SansPro-Bold();
             .Vertical-align();
