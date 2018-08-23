@@ -8,17 +8,9 @@ a {
     text-decoration: none;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside,
-figure, figcaption, footer, header
+html, body, div, span, h1, h2, h6, p, a, address,
+img, small, strong, i, ul, li, fieldset, form,
+aside, figure, figcaption, footer, header,
 nav, section {
     margin: 0;
     padding: 0;
@@ -28,10 +20,11 @@ nav, section {
     vertical-align: baseline;
 }
 
-article, aside, figcaption, figure,
+aside, figcaption, figure,
 footer, header, nav, section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
