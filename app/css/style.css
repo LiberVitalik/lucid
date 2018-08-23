@@ -980,3 +980,37 @@
   float: right;
   margin-right: 20px;
 }
+.product-map {
+  height: 370px;
+  background: url("../../img/map.png") 50% 50% no-repeat;
+}
+.product-footer {
+  padding: 26px 0 40px;
+  background: #15141a;
+  color: #444348;
+}
+.product-footer__social {
+  font-size: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.product-footer__social li {
+  display: inline-block;
+}
+.product-footer__social li a {
+  padding: 24px;
+}
+.product-footer__social li a:hover i {
+  color: #008ed6;
+}
+.product-footer__social li a i {
+  font-size: 20px;
+  color: #444348;
+}
+.product-footer__copyright {
+  font-family: 'SansPro-Semibold', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
