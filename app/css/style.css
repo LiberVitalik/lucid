@@ -4,8 +4,11 @@
 .SansPro-Light {
   font-family: 'SansPro-Light', sans-serif;
 }
+html {
+  font-size: 16px;
+}
 .main {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .wrap {
@@ -31,7 +34,7 @@
   display: inline-block;
   max-width: 200px;
   padding: 20px 30px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: white;
   border: 1px solid #4e4e54;
   border-radius: 3px;
@@ -81,7 +84,7 @@
 .device__header--logo h1 a {
   font-family: 'Quicksand-Bold', sans-serif;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .device__header--logo .logo-caption small {
@@ -93,7 +96,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   max-width: 45px;
-  font-size: 9px;
+  font-size: 0.5625rem;
   text-transform: uppercase;
   color: #4d4e52;
 }
@@ -134,7 +137,7 @@
 }
 .device__header nav ul li a {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
   max-width: 150px;
   display: block;
@@ -151,7 +154,7 @@
 .device__landing-page span {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .device__landing-page h1 {
@@ -162,7 +165,7 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
-  font-size: 48px;
+  font-size: 3rem;
   color: white;
   height: 100px;
 }
@@ -174,7 +177,7 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 5;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #999;
   line-height: 26px;
 }
@@ -197,12 +200,12 @@
 .overview .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .overview .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1a1a1a;
 }
 .overview .content-name h1,
@@ -303,7 +306,7 @@
   transition: all 0.2s ease-in;
 }
 .overview__info ul li a i {
-  font-size: 32px;
+  font-size: 2rem;
   color: #008ed6;
   position: absolute;
   top: 50%;
@@ -314,12 +317,12 @@
   margin: 0 auto;
 }
 .overview__info h6 {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #1a1a1a;
   margin-bottom: 20px;
 }
 .overview__info p {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #999;
 }
 .design {
@@ -335,12 +338,12 @@
 .design__device .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .design__device .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1a1a1a;
 }
 .design__device .content-name h1,
@@ -381,7 +384,7 @@
 }
 .design__device--text {
   font-family: 'SansPro-regular', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .design__device p {
   max-height: 180px;
@@ -426,7 +429,7 @@
 .design__device ul a i {
   color: #008ed6;
   margin-right: 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .design__device ul a span {
   display: inline-block;
@@ -446,12 +449,12 @@
 .customize__customize .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .customize__customize .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1a1a1a;
 }
 .customize__customize .content-name h1,
@@ -498,7 +501,7 @@
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 10;
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 500px;
   color: #999;
   margin-bottom: 35px;
@@ -514,12 +517,12 @@
 .quality .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .quality .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: white;
 }
 .quality .content-name h1,
@@ -566,7 +569,7 @@
   display: inline-block;
   width: 585px;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
 }
 .quality__carousel li p {
@@ -578,7 +581,7 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   line-height: 32px;
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 560px;
   margin-bottom: 20px;
 }
@@ -660,7 +663,7 @@
 .advertising__text {
   width: 70%;
   color: white;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 .advertising__text span {
   font-family: 'SansPro-Light', sans-serif;
@@ -680,12 +683,12 @@
 .plans .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .plans .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1a1a1a;
 }
 .plans .content-name h1,
@@ -753,7 +756,7 @@
   max-width: 260px;
   height: 70px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #1a1a1a;
   border-bottom: 1px solid #e0e0e0;
@@ -782,7 +785,7 @@
 .plans__plans-item--price .price-wrap:before {
   content: '\e902';
   font-family: 'lucid-font-icon', sans-serif;
-  font-size: 25px;
+  font-size: 1.5625rem;
   position: absolute;
   top: 10px;
   left: -20px;
@@ -796,13 +799,13 @@
   left: 50%;
   bottom: -20px;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #999;
 }
 .plans__plans-item--price .price-wrap span {
   font-family: 'SansPro-Semibold', sans-serif;
   max-width: 220px;
-  font-size: 60px;
+  font-size: 3.75rem;
   position: relative;
 }
 .plans__plans-item--description {
@@ -828,7 +831,7 @@
   font-family: 'SansPro-regular', sans-serif;
   min-height: 100px;
   padding-right: 5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 24px;
   text-align: center;
   color: #999;
@@ -859,12 +862,12 @@
 .contacts .content-name h2 {
   font-family: 'SansPro-Bold', sans-serif;
   color: #008ed6;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .contacts .content-name h1 {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #1a1a1a;
 }
 .contacts .content-name h1,
@@ -914,14 +917,14 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 7;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   width: 190px;
   max-width: 190px;
   min-height: 140px;
   margin: 0 100px;
 }
 .contacts__info--item i {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #008ed6;
 }
 .contacts__info--item span,
@@ -972,7 +975,7 @@
 }
 .contacts .feedback form .feedback-style::placeholder {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #606062;
   text-transform: uppercase;
 }
@@ -1005,12 +1008,12 @@
   color: #008ed6;
 }
 .footer__social li a i {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #444348;
 }
 .footer__copyright {
   font-family: 'SansPro-Semibold', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   text-align: center;
 }
