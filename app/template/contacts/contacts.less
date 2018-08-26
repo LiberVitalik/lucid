@@ -44,7 +44,7 @@
         }
     }
 
-    .feedback {
+    &__feedback {
         width: 770px;
         background: #15141a;
         position: absolute;
@@ -91,6 +91,44 @@
             .lucid-button {
                 float: right;
                 margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts {
+        &__feedback {
+            width: 100%;
+            bottom: -30%;
+
+            form {
+                fieldset {
+                    .Responsive;
+                }
+
+                padding: 20px;
+
+                input,
+                textarea,
+                .lucid-button {
+                    float: none;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &__info {
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            &--item {
+                float: left;
+                margin: 0 2%;
             }
         }
     }

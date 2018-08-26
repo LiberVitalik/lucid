@@ -1,6 +1,6 @@
 @import "../../less_mixin/_mixin";
 
-.advertising {
+.commercial {
     background: #15141a;
 
     .wrap {
@@ -30,6 +30,21 @@
             &:first-child {
                 margin-right: 15px;
             }
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .commercial {
+        &__control,
+        &__text {
+            .Responsive;
+
+            float: none;
+        }
+
+        &__text {
+            margin-bottom: 20px;
         }
     }
 }

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border: 1px solid transparent;
     background: @bg-color url("../../img/quality-bg.png") 50% 50% no-repeat;
+    background-size: cover;
 
     .content-name {
         .Component-content-name(@content-color: white);
@@ -87,6 +88,24 @@
             width: 14px;
             height: 14px;
             background: white;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .quality {
+        .content-name {
+            margin-bottom: 60px;
+        }
+
+        &__carousel {
+            .Responsive;
+
+            margin-bottom: 60px;
+
+            li {
+                margin-bottom: 50px;
+            }
         }
     }
 }

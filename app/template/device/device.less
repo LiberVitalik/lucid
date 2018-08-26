@@ -46,12 +46,10 @@
 
         nav {
             ul {
+                .Scrollbar(@max-height: 78px;
+                    @thumb-color: @brand-color);
+
                 max-width: 700px;
-                height: 26px;
-                max-height: 26px;
-                overflow: hidden;
-                display: inline-block;
-                vertical-align: middle;
                 margin-top: 10px;
 
                 li {
@@ -99,7 +97,7 @@
 
             font-size: 3rem;
             color: white;
-            height: 100px;
+            min-height: 100px;
         }
 
         p {
@@ -122,9 +120,56 @@
         }
     }
 
-    .devices {
+    &__mobile {
         position: absolute;
         right: 175px;
         bottom: -85px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .device {
+        height: auto;
+        padding: 10px;
+
+        &__header {
+            height: auto;
+            margin-bottom: 20px;
+
+            &--logo {
+                float: none;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__landing-page {
+            *:not(button) {
+                .Center;
+
+                width: 90%;
+                max-width: none;
+            }
+
+            h1 {
+                .Multi-clip(@line-count: 5);
+            }
+
+            p {
+                .Multi-clip(@line-count: 15);
+            }
+        }
+
+        nav {
+            float: none;
+
+            ul {
+                .Center;
+            }
+        }
+
+        &__mobile {
+            display: none;
+        }
     }
 }

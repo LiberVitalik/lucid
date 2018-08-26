@@ -43,6 +43,34 @@
     }
 }
 
+.Responsive {
+    .Center;
+
+    width: 90%;
+    float: none;
+
+    p,
+    ul {
+        .Center;
+
+        max-width: none;
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .content-name {
+        .Component-content-name();
+
+        margin: 60px 0 45px;
+    }
+
+    .block {
+        width: 100%;
+    }
+}
+
 .Component-content-name(
     @content-color: @section-name-color,
     @margin: 0 auto 20px,
@@ -94,6 +122,12 @@
             float: left;
         }
     }
+}
+
+.Center {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
 
 .Scrollbar(

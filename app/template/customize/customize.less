@@ -1,11 +1,12 @@
 @import "../../less_mixin/_mixin";
 
 .customize {
-    padding: 35px 0;
-    background: #f2f2f2;
+    padding: 120px 0;
+    background: #f2f2f2 url("../../img/device.png") 100% 50% no-repeat;
+    background-size: contain;
 
-    &__customize {
-        margin-top: 10%;
+    &__customize-device {
+        margin-top: 1%;
 
         .content-name {
             .Component-content-name(
@@ -25,8 +26,15 @@
             margin-bottom: 35px;
         }
     }
+}
 
-    &__device {
+@media (max-width: 1170px) {
+    .customize {
+        padding: 10px;
+        background: #f2f2f2;
 
+        .wrap {
+            .Responsive;
+        }
     }
 }
