@@ -1,5 +1,5 @@
 node_modules/
 .idea/
 psd/
-app/libs/
+src/libs/
 /package-lock.json
