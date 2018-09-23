@@ -1,0 +1,41 @@
+@import "../../less_mixin/_mixin";
+
+.footer {
+    padding: 26px 0 40px;
+    background: #15141a;
+    color: #444348;
+
+    &__social {
+        font-size: 0;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                padding: 24px;
+
+                &:hover {
+                    i {
+                        color: @brand-color;
+                    }
+                }
+
+                i {
+                    font-size: 1.25rem;
+                    color: #444348;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        .SansPro-Semibold();
+
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}

@@ -1,0 +1,76 @@
+@import "../../less_mixin/_mixin";
+
+html {
+    font-size: 16px;
+}
+
+.main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.clip {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.block {
+    width: 50%;
+}
+
+.lucid-button {
+    .SansPro-Bold();
+
+    display: inline-block;
+    max-width: 200px;
+    padding: 20px 30px;
+    font-size: 0.875rem;
+    color: white;
+    border: 1px solid #4e4e54;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        background: @brand-color;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+@media (max-width: 1170px) {
+    html {
+        font-size: 17px;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .wrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+}

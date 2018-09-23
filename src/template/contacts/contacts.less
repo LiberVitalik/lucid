@@ -1,0 +1,135 @@
+@import "../../less_mixin/_mixin";
+
+.contacts {
+    background: @line-color;
+    position: relative;
+
+    .content-name {
+        .Component-content-name();
+
+        padding: 60px 0;
+    }
+
+    &__info {
+        padding-bottom: 370px;
+
+        &--item {
+            .Multi-clip(@line-count: 7);
+
+            text-align: center;
+            font-size: 1.125rem;
+            width: 190px;
+            max-width: 190px;
+            min-height: 140px;
+            margin: 0 100px;
+
+            i {
+                font-size: 1.875rem;
+                color: @brand-color;
+            }
+
+            span,
+            address,
+            a {
+                .SansPro-Regular();
+
+                text-align: center;
+                color: @text-color;
+                line-height: 26px;
+
+                &:first-of-type {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+    &__feedback {
+        width: 770px;
+        background: #15141a;
+        position: absolute;
+        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        form {
+            padding: 60px 65px 40px 70px;
+
+            input:not([type='submit']) {
+                width: 300px;
+                height: 50px;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 300px;
+                height: 190px;
+                float: right;
+                resize: none;
+                padding-top: 20px;
+                margin-right: 20px;
+            }
+
+            .feedback-style {
+                border: 1px solid #444348;
+                background: transparent;
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding-left: 20px;
+                color: white;
+
+                &::placeholder {
+                    .SansPro-Semibold();
+
+                    font-size: 0.875rem;
+                    color: #606062;
+                    text-transform: uppercase;
+                }
+            }
+
+            .lucid-button {
+                float: right;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .contacts {
+        &__feedback {
+            width: 100%;
+            bottom: -30%;
+
+            form {
+                fieldset {
+                    .Responsive;
+                }
+
+                padding: 20px;
+
+                input,
+                textarea,
+                .lucid-button {
+                    float: none;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        &__info {
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            &--item {
+                float: left;
+                margin: 0 2%;
+            }
+        }
+    }
+}

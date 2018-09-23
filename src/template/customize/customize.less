@@ -1,0 +1,40 @@
+@import "../../less_mixin/_mixin";
+
+.customize {
+    padding: 120px 0;
+    background: #f2f2f2 url("../../img/device.png") 100% 50% no-repeat;
+    background-size: contain;
+
+    &__customize-device {
+        margin-top: 1%;
+
+        .content-name {
+            .Component-content-name(
+                @margin: 0 0 20px 0,
+                @text-align: left);
+
+            margin-bottom: 45px;
+        }
+
+        p {
+            .SansPro-Regular();
+            .Multi-clip(@line-count: 10, @max-height: 180px);
+
+            font-size: 1.125rem;
+            max-width: 500px;
+            color: @text-color;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .customize {
+        padding: 10px;
+        background: #f2f2f2;
+
+        .wrap {
+            .Responsive;
+        }
+    }
+}

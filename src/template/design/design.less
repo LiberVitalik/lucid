@@ -1,0 +1,78 @@
+@import "../../less_mixin/_mixin";
+
+.design {
+    padding: 65px 0;
+    border-top: 1px solid @line-color;
+
+    &__devices {
+        img {
+            margin-left: 190px;
+        }
+    }
+
+    &__device {
+        .content-name {
+            .Component-content-name(
+                @margin: 0 0 20px 0,
+                @text-align: left);
+
+            margin-bottom: 45px;
+        }
+
+        &--text {
+            .SansPro-Regular();
+
+            font-size: 1.125rem;
+        }
+
+        p {
+            .Multi-clip(@line-count: 10, @max-height: 180px);
+
+            max-width: 500px;
+            color: @text-color;
+            margin-bottom: 35px;
+        }
+
+        ul {
+            .Scrollbar(
+                @thumb-color: @brand-color,
+                @track-color: @text-color,
+                @max-height: 200px);
+
+            max-width: 500px;
+            overflow: auto;
+
+            a {
+                .Vertical-align();
+
+                margin-bottom: 15px;
+
+                i {
+                    color: @brand-color;
+                    margin-right: 10px;
+                    font-size: 1.125rem;
+                }
+
+                span {
+                    display: inline-block;
+                    max-width: 400px;
+                    color: @section-name-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .design {
+        padding: 10px;
+
+        &__devices {
+            display: none;
+        }
+
+        &__device {
+            .Responsive;
+        }
+    }
+}

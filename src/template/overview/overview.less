@@ -1,0 +1,76 @@
+@import "../../less_mixin/_mixin";
+
+.overview {
+    .content-name {
+        .Component-content-name();
+
+        margin: 60px 0 45px;
+    }
+
+    &__info {
+        .SansPro-Regular();
+        .Column(@width-item: 235px);
+        .Scrollbar(@thumb-color: @brand-color, @max-height: 580px);
+
+        text-align: center;
+        margin-bottom: 70px;
+
+        ul {
+            max-width: 1170px;
+            overflow: hidden;
+
+            li {
+                padding-top: 5px;
+                margin-top: 45px;
+
+                &:not(:nth-child(4)) {
+                    margin-right: 70px;
+                }
+
+                &:hover {
+                    a {
+                        transform: scale(1.1);
+                    }
+                }
+
+                p {
+                    .Multi-clip(@line-count: 20, @max-height: 360px);
+                }
+
+                a {
+                    width: 90px;
+                    height: 90px;
+                    border: 1px solid #e0e0e0;
+                    border-radius: 50%;
+                    position: relative;
+                    margin-bottom: 30px;
+                    transition: all 0.2s ease-in;
+
+                    i {
+                        font-size: 2rem;
+                        color: @brand-color;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+
+        * {
+            margin: 0 auto;
+        }
+
+        h6 {
+            font-size: 1.5rem;
+            color: @section-name-color;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: @text-color;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+@import "../../less_mixin/_mixin";
+
+.commercial {
+    background: #15141a;
+
+    .wrap {
+        .Vertical-align();
+
+        padding: 65px 0;
+    }
+
+    &__text {
+        width: 70%;
+        color: white;
+        font-size: 2.25rem;
+
+        span {
+            .SansPro-Light();
+        }
+
+        strong {
+            .SansPro-Semibold();
+        }
+    }
+
+    &__control {
+        width: 30%;
+
+        button {
+            &:first-child {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .commercial {
+        &__control,
+        &__text {
+            .Responsive;
+
+            float: none;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+}
